@@ -20,14 +20,10 @@ The address was changed by resoldering the SMD resistor from position 0x7B to 0x
 Adafruit_SSD1306 display1(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 Adafruit_SSD1306 display2(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-
-
-
 void setup() {
   Serial.begin(9600);
   display1.begin(SSD1306_SWITCHCAPVCC, SCREEN_1_ADDRESS);
   display2.begin(SSD1306_SWITCHCAPVCC, SCREEN_2_ADDRESS);
-
 
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
